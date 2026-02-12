@@ -1,12 +1,13 @@
 import "./Product.css";
 
-function Product({title,description="your description",features}) {
-    const list=features.map((feature)=><li>{feature}</li>); 
+function Product({title,description="your description",features,price}) {
+    let styles={backgroundColor:price>30000?"blue": null} ;
     return (
-        <div className="Product">
+        <div className="Product" style={styles}>
             <h3>{title}</h3>
             <h5>{description}</h5>
-            <p>{list}</p>
+            <h5>Price:{price}</h5>
+            {price>30000?<p>Discount of 5%</p>:null}
         </div> 
     )
 }
