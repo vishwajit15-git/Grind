@@ -1,0 +1,14 @@
+.Price{
+    background-color: goldenrod;
+    height: 35px;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius:20px ;
+}
+
+#oldPrice{
+    text-decoration: line-through;
+}
+
+#newPrice{
+    font-weight: bold;
+}
