@@ -8,8 +8,8 @@ function App() {
   return (
     <> 
     <h4> States in React</h4> {" "}
-    {/* <Counter/> */}
-    <LikeButton/>
+    <Counter/>
+    {/* <LikeButton/> */}
     </>
   )
 }
